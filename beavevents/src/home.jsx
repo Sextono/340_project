@@ -1,11 +1,18 @@
 import './home.css';
 import { Link } from 'react-router-dom';
+import frisbee from './assets/OSUFrisbeeBeaverBrawl.jpg';
+import logo from './assets/BeavEventsLogo.png';
+
 
 function Home() {
   return (
     <div className="home-wrapper">
       <header className="home-header">
-        <h1 className="home-title">BeavEvents</h1>
+        <img src={logo}  alt="BeavEvents Logo" className="logo" />
+        <h1 className="home-title">
+          <span style={{ color: '#D63F09' }}>Beav</span>
+          <span style={{ color: '#000000' }}>Events</span>
+        </h1>
         <div className="nav-buttons">
           <Link to="/clubs"><button className="nav-btn">Clubs</button></Link>
           <Link to="/events"><button className="nav-btn">Events</button></Link>
@@ -13,12 +20,46 @@ function Home() {
       </header>
 
       <main className="home-content">
-        <p><strong>Website Description:</strong><br />
-        A website that helps manage clubs<br /></p>
+        <p className='body-text'><strong className='subheader'>About this website:</strong><br />
+        Our project, BeaverConnect, is a website that helps students at Oregon State University find and get involved in campus events and clubs. Clubs can post and manage their events, and students can browse what's coming up, RSVP, and leave feedback afterward. Students can also join clubs through the site, making it easy to stay connected with what’s happening around campus. Club officers can track attendance and feedback, while students get a personalized view of events they care about. The goal is to make it easier for everyone to get involved and stay connected at OSU. 
+        <br/>
+        <br/>
+        For more information about how to use the website, click the "Tutorial" button below.<Link to="/tutorial"><button className="tut-btn">Tutorial</button></Link></p>
+        
+        
+      
+        <div className='fris-wrap'><img src={frisbee}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="frisbee-photo" />
+          <p className='caption'>A player makes a great catch at the 'Beaver Brawl', an annual tournament hosted by the OSU Mens Ultimate Frisbee Club</p>
+        </div>
       </main>
 
-      <footer className="home-footer">
-        Contact info etc
+      <footer className="footer">
+        <div className="footer-main">
+          <div className="footer-column">
+            <h4>Authors</h4>
+            <p>Website designed by Carter Cripe, Owen Sexton</p>
+            
+            <p>Phone: (970) 581-8720</p>
+          </div>
+          <div className="footer-column">
+            <h4>Contact</h4>
+            <p>Carter's Email: cripeca@oregonstate.edu</p>
+            <p>Owen's Email: sextono@oregonstate.edu</p>
+          </div>
+          <div className="footer-column">
+            <h4>Social</h4>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Instagram</a>
+            <a href='https://x.com/carter_cripe' target="_blank"><p>Twitter</p></a>
+            
+          </div>
+          <div className="credit">
+            <p>Logo created by DALL-e <br/>Photo by Robert Scherle</p>
+          </div>
+        </div>
+        <div className="footer-bar">
+          <p>© 2025 BeavEvents — All rights reserved.</p>
+        </div>
+        
       </footer>
     </div>
   );

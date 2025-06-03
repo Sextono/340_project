@@ -13,44 +13,66 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #F2F2F2;
+    background-color: #F7F5F5;
     padding: 1rem 2rem;
     box-sizing: border-box;
   }
   
   .home-title {
-    font-size: 2.5rem;
+    text-align: left;
+    font-size: 5rem;
     margin: 0;
+    color:#D63F09;
   }
   
   .nav-buttons {
+    gap: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+
   }
   
-  .nav-btn {
+  /*
+    /* .nav-btn {
     /* background-color: orange; */
-    /* color: black; */
+    /* color: black; 
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
     cursor: pointer;
-  }
+
   
+  */
   
   .home-content {
     padding: 2rem;
     flex-grow: 1;
+    max-width: 100%;
+    display: flex;
+    /* height: 100vh; */
+  }
+
+  .body-text {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subheader {
+    font-size: 2rem;
   }
   
   .home-footer {
-    background-color: #F07D22;
+    background-color: #D63F09;
     padding: 1rem 2rem;
     text-align: center;
+    min-height: 100px;
     width: 100%;
     box-sizing: border-box;
+    color: #000000;
 
   }
   
@@ -58,4 +80,88 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    
+  }
+  .ev {
+    color:#000000;
+  }
+  .logo {
+    height: 200px;
+    width: auto;
+  }
+  .fris-wrap {
+
+    flex: 1; /* Takes up half the space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .frisbee-photo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10%;
+
+  }
+  .footer {
+    margin-top: 4rem;
+  }
+  
+  .footer-main {
+    background-color: #423E3C;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 1rem;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-bar {
+    background-color: #D63F09;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+
+  .tut-btn {
+    /* display: block; */
+    margin-top: 20px;
+  }
+  .caption {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    text-align: center;
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .credit {
+    position: relative;
+    /* bottom: 10px;
+    right: 10px; */
+    font-size: 0.8em;
+    text-align: right;
+    /* text-align: bottom; */
+    padding: 5px 8px;
+    border-radius: 4px;
+    grid-row: 2;
+
   }
