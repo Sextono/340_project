@@ -29,7 +29,7 @@ function Home() {
         
       
         <div className='fris-wrap'><img src={frisbee}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="frisbee-photo" />
-          <p className='caption'>A player makes a great catch at the 'Beaver Brawl', an annual tournament hosted by the OSU Mens Ultimate Frisbee Club</p>
+          <p className='caption'>(Figure 1) A player makes a great catch at the 'Beaver Brawl', an annual tournament hosted by the OSU Mens Ultimate Frisbee Club</p>
         </div>
       </main>
 
@@ -37,7 +37,7 @@ function Home() {
         <div className="footer-main">
           <div className="footer-column">
             <h4>Authors</h4>
-            <p>Website designed by Carter Cripe, Owen Sexton</p>
+            <p>Website by Carter Cripe, Owen Sexton</p>
             
             <p>Phone: (970) 581-8720</p>
           </div>
@@ -52,9 +52,14 @@ function Home() {
             <a href='https://x.com/carter_cripe' target="_blank"><p>Twitter</p></a>
             
           </div>
-          <div className="credit">
-            <p>Logo created by DALL-e <br/>Photo by Robert Scherle</p>
+          <div className="footer-column">
+            <h4>Image credit</h4>
+            <p>BeavEvents Logo created by DALL-e </p>
+            <p>Figure 1 by Robert Scherle</p>            
           </div>
+          {/* <div className="credit">
+            
+          </div> */}
         </div>
         <div className="footer-bar">
           <p>© 2025 BeavEvents — All rights reserved.</p>
