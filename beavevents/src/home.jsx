@@ -1,24 +1,40 @@
-import './home.css';
+import './styles/home.css';
 import { Link } from 'react-router-dom';
 import frisbee from './assets/OSUFrisbeeBeaverBrawl.jpg';
-import logo from './assets/BeavEventsLogo.png';
+import logo from './assets/NoBackLogo.png';
+
 
 
 function Home() {
+ 
   return (
     <div className="home-wrapper">
       <header className="home-header">
+        
         <img src={logo}  alt="BeavEvents Logo" className="logo" />
-        <h1 className="home-title">
-          <span style={{ color: '#D63F09' }}>Beav</span>
-          <span style={{ color: '#000000' }}>Events</span>
-        </h1>
-        <div className="nav-buttons">
-          <Link to="/clubs"><button className="nav-btn">Clubs</button></Link>
-          <Link to="/events"><button className="nav-btn">Events</button></Link>
+        <div className='head-col'>
+          <h1 className="home-title">
+            <span style={{ color: '#D63F09', fontSize: '80px'}}>Beav</span>
+            <span style={{ color: '#000000', fontSize: '80px' }}>Events</span>
+          </h1>
+          <nav className="menu-bar">
+            <ul className="menu-list">
+              <li className="menu-item active">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/events">Events</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/clubs">Clubs</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/tutorial">Help</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-
       <main className="home-content">
         <p className='body-text'><strong className='subheader'>About this website:</strong><br />
         Our project, BeaverConnect, is a website that helps students at Oregon State University find and get involved in campus events and clubs. Clubs can post and manage their events, and students can browse what's coming up, RSVP, and leave feedback afterward. Students can also join clubs through the site, making it easy to stay connected with what’s happening around campus. Club officers can track attendance and feedback, while students get a personalized view of events they care about. The goal is to make it easier for everyone to get involved and stay connected at OSU. 
@@ -57,9 +73,6 @@ function Home() {
             <p>BeavEvents Logo created by DALL-e </p>
             <p>Figure 1 by Robert Scherle</p>            
           </div>
-          {/* <div className="credit">
-            
-          </div> */}
         </div>
         <div className="footer-bar">
           <p>© 2025 BeavEvents — All rights reserved.</p>
