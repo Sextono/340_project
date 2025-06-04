@@ -32,22 +32,27 @@ function Tutorial() {
         </div>
       </header>
       <div className="home-content">
-        <p className='body-text'><strong className='subheader'>How to use the Clubs Page:</strong><br />
-            Lorel Ipsum...        
-        <br/>
-        <br/>
-        </p>
-        <div className='fris-wrap'><img src={logo}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="frisbee-photo" />
+      <div className='body-text'><strong className='subheader'>How to use the Clubs Page:</strong><br />
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+        </div>
+        <div className='fris-wrap'><img src={logo}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="help-photo" />
           <p className='caption'>Placeholder image</p>
         </div>      
       </div>
       <div className='home-content-alt'>
-        <p className='body-text'><strong className='subheader'>How to use the Events Page:</strong><br />
-            Lorel Ipsum...        
-        <br/>
-        <br/>
-        </p>
-        <div className='fris-wrap'><img src={logo}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="frisbee-photo" />
+        <div className='body-text'><strong className='subheader'>How to use the Events Page:</strong><br />
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+        </div>
+        
+        <div className='fris-wrap'><img src={logo}  alt="A frisbee player from the oregon state mens ultimate frisbee club makes a great catch at the annual beaver brawl event" className="help-photo" />
           <p className='caption'>Placeholder image</p>
         </div>
       </div>

@@ -1,0 +1,6 @@
+.help-photo {
+    max-width: 80%;
+    max-height: auto;
+    object-fit: contain;
+    border-radius: 10%;
+}
