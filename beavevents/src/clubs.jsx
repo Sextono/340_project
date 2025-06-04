@@ -19,16 +19,17 @@ function Clubs() {
               <li className="menu-item">
                 <Link to="/">Home</Link>
               </li>
-              <li className="menu-item">
-                <Link to="/events">Events</Link>
-              </li>
               <li className="menu-item active">
                 <Link to="/clubs">Clubs</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/events">Events</Link>
               </li>
               <li className="menu-item">
                 <Link to="/tutorial">Help</Link>
               </li>
             </ul>
+            
           </nav>
         </div>
       </header>
@@ -58,7 +59,6 @@ function Clubs() {
           <div className="footer-column">
             <h4>Image credit</h4>
             <p>BeavEvents Logo created by DALL-e </p>
-            <p>Figure 1 by Robert Scherle</p>            
           </div>
         </div>
         <div className="footer-bar">

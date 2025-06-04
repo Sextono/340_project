@@ -23,10 +23,10 @@ function Home() {
                 <Link to="/">Home</Link>
               </li>
               <li className="menu-item">
-                <Link to="/events">Events</Link>
+                <Link to="/clubs">Clubs</Link>
               </li>
               <li className="menu-item">
-                <Link to="/clubs">Clubs</Link>
+                <Link to="/events">Events</Link>
               </li>
               <li className="menu-item">
                 <Link to="/tutorial">Help</Link>

@@ -19,11 +19,11 @@ function Events() {
               <li className="menu-item">
                 <Link to="/">Home</Link>
               </li>
-              <li className="menu-item active">
-                <Link to="/events">Events</Link>
-              </li>
               <li className="menu-item">
                 <Link to="/clubs">Clubs</Link>
+              </li>
+              <li className="menu-item active">
+                <Link to="/events">Events</Link>
               </li>
               <li className="menu-item">
                 <Link to="/tutorial">Help</Link>
@@ -58,7 +58,6 @@ function Events() {
           <div className="footer-column">
             <h4>Image credit</h4>
             <p>BeavEvents Logo created by DALL-e </p>
-            <p>Figure 1 by Robert Scherle</p>            
           </div>
         </div>
         <div className="footer-bar">
